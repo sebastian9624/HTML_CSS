@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+.box {
+    width: 280px;
+    background: #e2e2e2;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 40px 10px #0007; /* Primer parametro: - Valor horizontal, también admite valores negativos
+    -Segundo: verticalmente
+    -Tecero:  desenfoque
+    -Cuarto: extensión */
+    padding: 20px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #444;
+    text-align: center;
+}
+
+h2{
+    margin-top: 5px;
+    color: #777;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 100;
+    text-shadow: 0 0 3px #fb8002;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 14px;
+    text-shadow: 0 0 5px #f809;
+    /* este sirve para texto */
+}
+
+.box-shadow{
+    width: 160px;
+    border-radius: 100%;
+    margin: auto;
+    box-shadow: 0 0 10px 1px #0007;
+    /* este sirve para cajas */
+}
+
+.drop-shadow{
+    width: 160px;
+    filter: drop-shadow(0 0 3px #fb8002);
+    /* este sirve para imagenes con fondo transparente o blanco */
+}
