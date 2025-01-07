@@ -1,0 +1,41 @@
+/* div{
+    background: blue;
+    background: black;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.bordes{
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border: 3px solid black;
+    border-radius: 6px;
+}
+
+.colombia_flag{
+    margin-top: 20px;
+    height: 120px;
+    border-top: 80px solid yellow;
+    border-bottom: 80px solid red;
+    /* border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 35px; 
+    border-radius: 30px 15px 35px 30px;
+
+} 
+ */
+
+body{
+    background: black;
+}
+input{
+    margin: 5px;
+    padding: 6px 9px; 
+    border: none;
+    border-bottom: 1px solid greenyellow;
+    background: transparent;
+    color: greenyellow;
+}

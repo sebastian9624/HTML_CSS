@@ -1,8 +1,15 @@
-.formulario{
-    background: red;
-    padding: 10px;
+body{
+    margin: 0;
 }
+.box1 {
+    background: red;
+    height: 150px;
+    width: 150px;
+    margin: 200px;
+}
+.box2 {
+    background: red;
+    height: 150px;
+    width: 150px;
 
-.formulario_input{
-    padding: 10px;
 }

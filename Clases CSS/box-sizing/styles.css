@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    background: red;
+    margin: 10px;
+}
+
+.box-default{
+    padding: 25px;
+    border: 10px solid black;
+    /* Aquí la caja incrementea y se suma, el valor de 100px solo es para el contenido */
+}
+
+.box-new{
+    box-sizing: border-box; /* Se ajusta al tamaño fijado y su contenido también lo hace */
+    padding: 25px;
+    border: 10px solid black;
+}
