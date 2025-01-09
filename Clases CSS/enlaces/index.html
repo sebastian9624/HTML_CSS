@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces (Avanzado)</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <form action="">
+        <h2>Formulario de contacto</h2>
+
+        <fieldset>
+            <legend>Información	básica</legend>
+                <!-- SIMPLE INPUT -->
+                <div class="form_input">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" placeholder="John Doe" id="name">
+                </div>
+                <div class="form_input">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="john.doe@example.com" id="email">
+                </div>
+                <div class="form_input">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" placeholder="El asunto de tu mensaje" id="asunto">
+                </div>
+        </fieldset>
+        <!-- SELECT & OPTION -->
+        <div class="form_input">
+            <label for="type_user">Tipo de usuario</label>
+            <select name="type-of-user" id="type_user">
+                <option value="user1">Seguidor</option>
+                <option value="user2">Empresa</option>
+                <option value="user3">Otros</option>
+            </select>
+        </div>
+        <!-- DATALIST & OPTION -->
+        <div class="form_input">
+            <label for="referente">Referente</label>
+            <input type="text" list="referente">
+            <datalist name="type-of-user" id="referente" >
+                <option value="Reclutador"></option>
+                <option value="Empresa"></option>
+                <option value="Amigo"></option>
+            </datalist>
+        </div>
+        <!-- TEXTAREA -->
+        <div class="form_input">
+            <label for="message">Mensaje</label>
+            <textarea name="" id="message" rows="6" placeholder="Escribe un mensaje..."></textarea>
+        </div>
+        <div class="form_input">
+            <label for="terms">Acepto los <a href="terms.html" target="_blank">términos y condiciones</a>
+                <input type="checkbox" class="checkbox" name="" id="terms">
+            </label>
+        </div>
+    </form>
+</body>
+</html>
