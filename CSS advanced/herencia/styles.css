@@ -1,0 +1,16 @@
+body {
+    color: #00f;
+}
+div {
+    color: #e2742b88;
+    font-family: sans-serif;
+}
+
+/* h1 {
+    color: inherit; hereda el color de su padre o antecesor
+} */
+
+h1 {
+    color: initial; /* hereda color por defecto */
+    font-family: initial; /* hereda fuente por defecto */
+}

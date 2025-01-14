@@ -1,0 +1,68 @@
+h1{
+    color: #48e;
+    font-family: sans-serif;
+    margin: 30px;
+}
+
+/* hover: pasar el mouse por el elemento */
+h1:hover{
+    background-color: #777;
+    color: #f00;
+}
+
+/* active: cuando se hace click en el elemento */
+h1:active{
+    background-color: #f00;
+    color: #fff;
+}
+
+/* Seleccionando el primer Li */
+li:first-child{
+    color: #f00;
+}
+
+/* Seleccionando cualquier elemento de Li que no sea el primero o el último */
+li:nth-child(2){
+    color: #00f;
+}
+
+/* Seleccionando el último Li */
+li:last-child{
+    color: #0f0;
+}
+
+/* Seleccionando los elementos pares de Li */
+li:nth-child(even){
+    background-color: #79f;
+}
+
+/* Seleccionando los elementos impares de Li */
+li:nth-child(odd){
+    background-color: #f79;
+}
+
+/* Seleccionando los elementos de Li que estén en una posición múltiplo de 3 */
+li:nth-child(3n){
+    color: #f0f;
+}
+
+/* Seleccionando segundo Li ignorando la posición del span */
+li:nth-of-type(2){
+    color: #991;
+}
+
+.lista li {
+    color: #f00;
+}
+
+/* Seleccionando los elementos de Li que no tengan la clase excluir */
+.lista li:not(.excluir){
+    color: #00f;
+}
+
+div:empty {
+    background-color: #f00;
+    color: #fff;
+    padding: 30px;
+
+}

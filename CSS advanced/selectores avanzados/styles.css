@@ -1,0 +1,59 @@
+/* SELECTOR POR ATRIBUTO */
+
+/* img[src="batman.png"] { selecciono la imagen con el atributo src y el nombre especificado
+    width: 100%;
+} */
+/* img[src$="png"] { selecciono todas imagenes que terminen en png 
+    width: 100%;
+} */
+
+/* img[src^="batman"] { selecciono todas imagenes que empiecen por batman 
+    width: 100%;
+} */
+
+
+/* SELECTOR POR HIJO DIRECTO */
+/* ul li{ selecciona los elementos li dentro de un ul
+    color: #f007;
+} */
+
+
+/* ul > li{ selecciona los elementos li que son hijos directos de un ul
+    color: #f007;
+} */
+
+/* SELECTOR DESCENDIENTE */
+/* ul li{ selecciona los elementos li dentro de un ul
+    color: #f007;
+} */
+
+/* SELECTOR DE HERMANO ADYACENTE */
+/* h1 + p {
+    color: #f0f;
+} */
+
+/* SELECTOR DE HERMANOS GENERALES */
+/* h1 ~ p {
+    color: #f0f;
+} */
+img[src^="batman"] { 
+    width: 100%;
+}
+
+ul li{ 
+    color: #777;
+}
+
+
+li > em{ 
+    color: #f007;
+}
+
+h1 + p {
+    color: #f0f;
+}
+
+h1 ~ p {
+    color: #f55;
+}
+
