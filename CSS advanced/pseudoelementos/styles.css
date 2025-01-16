@@ -1,0 +1,61 @@
+/*
+ * Pseudoelementos y pseudoclases en CSS:
+ *
+ * Pseudoelementos:
+ * - Los pseudoelementos se utilizan para aplicar estilos a una parte específica de un elemento.
+ * - Se identifican con una doble coma (::) antes del nombre del pseudoelemento.
+ * - Ejemplos comunes incluyen ::before, ::after, ::first-line, y ::first-letter.
+ * - Ejemplo de uso:
+ *   p::first-line {
+ *     font-weight: bold;
+ *   }
+ *
+ * Pseudoclases:
+ * - Las pseudoclases se utilizan para definir un estado especial de un elemento.
+ * - Se identifican con una sola coma (:) antes del nombre de la pseudoclase.
+ * - Ejemplos comunes incluyen :hover, :active, :focus, y :nth-child.
+ * - Ejemplo de uso:
+ *   a:hover {
+ *     color: red;
+ *   }
+ *
+ * En resumen, los pseudoelementos permiten aplicar estilos a partes específicas de un elemento, mientras que las pseudoclases permiten aplicar estilos basados en el estado de un elemento.
+ */
+div {
+    padding: 20px;
+}
+
+h1::first-letter {
+    font-size: 2em;
+    color: red;
+    letter-spacing: -8px;
+
+}
+
+div::first-line {
+    font-size: 1.5em;
+    color: blue;
+    font-weight: bold;
+}
+
+div::selection {
+    background-color: yellow;
+}
+
+input::placeholder{
+    color: #29f;
+}
+
+li::marker{
+    color: #8d9
+}
+
+li::before{
+    content: "Antes 🔥";
+    margin-right: 10px;
+}
+
+li::after{
+    content: "❤️ Después";
+    margin-left: 10px;
+}

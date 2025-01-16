@@ -1,0 +1,91 @@
+/*
+ * La propiedad `display` en CSS se utiliza para definir cómo se debe mostrar un elemento en la página web.
+ * Esta propiedad controla el modelo de caja de un elemento y su comportamiento en el flujo del documento.
+ *
+ * Valores comunes de `display`:
+ * - `block`: El elemento se comporta como un bloque, ocupando todo el ancho disponible y comenzando en una nueva línea.
+ * - `inline`: El elemento se comporta como un elemento en línea, ocupando solo el espacio necesario y permitiendo que otros elementos se sitúen a su lado.
+ * - `inline-block`: Combina características de `block` e `inline`, permitiendo que el elemento se comporte como un bloque pero se sitúe en línea con otros elementos.
+ * - `none`: El elemento no se muestra y no ocupa espacio en el flujo del documento.
+ * - `flex`: El elemento se convierte en un contenedor flexible, permitiendo el uso de la disposición flexible (flexbox).
+ * - `grid`: El elemento se convierte en un contenedor de cuadrícula, permitiendo el uso de la disposición de cuadrícula (grid).
+ *
+ * Ejemplo de uso:
+ * ```css
+ * .mi-clase {
+ *     display: flex;
+ * }
+ * ```
+ * En este ejemplo, el elemento con la clase `mi-clase` se comportará como un contenedor flexible.
+ */
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+div {
+    padding: 20px;
+    background-color: #777;
+}
+
+/* El elemento a siempre es inline lo cual no permite muchas propiedades o cambiar su estilo debido a que se rompe, cuando se cambia a block se puede compportar como un div */
+/* a {
+    background-color: #f00;
+    color: #fff;
+    display: block;
+    border: 1px solid #000;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.5;
+} */
+
+p{
+    background-color: #000;
+    color: #fff;
+/*     display: inline; */
+    margin: 5px;
+    padding: 20px;
+    height: 20px;
+}
+
+.nav {
+    background-color: #48e;
+    text-align: center;
+}
+
+.nav__list{
+    margin: 0;
+}
+
+.nav__item{
+    display: inline-block;
+    
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    background-color: #48e;
+}
+
+.nav__link:hover{
+    background-color: #6af;
+}
+
+.link--button {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #48e;
+    padding: 4px 18px;
+    border-radius: 3px;
+    margin-left: 60px;
+}
+
+.link--button:hover {
+    background: transparent;
+    color: #fff;
+}

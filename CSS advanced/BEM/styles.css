@@ -1,0 +1,51 @@
+/*
+ * Metodología BEM (Block, Element, Modifier)
+ * -------------------------------------------
+ * BEM es una convención de nomenclatura para clases CSS que facilita la 
+ * creación de componentes reutilizables y mantenibles. Se divide en tres partes:
+ *
+ * 1. Block (Bloque): Representa un componente independiente que puede 
+ *    reutilizarse. Ejemplo: .menu
+ * 2. Element (Elemento): Representa una parte del bloque que tiene una 
+ *    funcionalidad específica. Se denota con dos guiones bajos (__). 
+ *    Ejemplo: .menu__item
+ * 3. Modifier (Modificador): Representa una variación del bloque o elemento. 
+ *    Se denota con dos guiones (--). Ejemplo: .menu__item--active
+ *
+ * Uso:
+ * - Facilita la lectura y comprensión del código CSS.
+ * - Promueve la reutilización de componentes.
+ * - Reduce el riesgo de colisiones de nombres en CSS.
+ *
+ * Ejemplo:
+ * .button { ... }            // Block
+ * .button__icon { ... }      // Element
+ * .button--primary { ... }   // Modifier
+ */
+
+.lista {
+    list-style: square;
+    margin: 0;
+}
+
+.lista--vieja {
+    opacity: 0.3;
+    background-color: #ddd;
+}
+
+/* Lista = Bloque 
+__ = se usa como separador en la metodología BEM 
+item = elemento dentro del bloque 
+modifier = se usa -- como separador y se usa para modificar tanto bloques como elementos*/
+.lista__item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item--danino{
+    color: #7B0;
+}
+
+.item--importante{
+    color: #f00;
+}

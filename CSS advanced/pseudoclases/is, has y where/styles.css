@@ -1,0 +1,47 @@
+section .elemento1, 
+section .elemento2, 
+section .elemento3 {
+    color: #f00;
+}
+
+/* Is = agrupa elementos que enten dentro de section, también cambia la especificidad a comparación de where*/
+section :is(.elemento1, .elemento2, .elemento3) {
+    color: #0f0;
+}
+
+/* Where */
+section :where(.elemento1, .elemento2, .elemento3) {
+    color: #00f;
+}
+
+/* Has = verifica que contenga algo section y lo modifica */
+section :has(.elemento1) {
+    background-color: #f0f;
+}
+
+
+/* En caso de que a UL le siga un DIV modificamos el UL */
+ul:has(+div) {
+    color: #27B;
+}
+
+div{
+    padding: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+label:has(input:valid) {
+    color: #070;
+}
+
+
+label:has(input:invalid) {
+    color: #900;
+}
+
+input {
+    color: inherit;
+}

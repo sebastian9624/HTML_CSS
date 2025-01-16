@@ -1,3 +1,4 @@
+
 h1{
     color: #48e;
     font-family: sans-serif;
@@ -60,9 +61,40 @@ li:nth-of-type(2){
     color: #00f;
 }
 
+div{
+    border: 2px solid #000;
+}
+
+/* Selecciona elementos vacios */
 div:empty {
     background-color: #f00;
     color: #fff;
     padding: 30px;
+    border: none;
 
+}
+
+input[type="checkbox"] {
+    margin: 50px;
+}
+
+input[type="checkbox"]:checked {
+    margin: 0;
+}
+
+input[type="email"]:invalid{
+    color: #f00;
+}
+input[type="email"]:valid{
+    color: #0f0;
+}
+
+/* Seleccionando enlaces no visitados */
+a:link {
+    color: #f0f;
+}
+
+/* Seleccionando enlaces visitados */
+a:visited {
+    color: #8ff;
 }
