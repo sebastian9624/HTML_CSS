@@ -1,0 +1,73 @@
+/* 
+    La propiedad `position` en CSS se utiliza para especificar el método de posicionamiento de un elemento en un documento.
+
+    `position: fixed;`
+    - Un elemento con `position: fixed;` se posiciona en relación con la ventana del navegador.
+    - No se desplaza cuando se hace scroll en la página.
+    - Se mantiene en la misma posición incluso cuando se desplaza la página.
+
+    `position: sticky;`
+    - Un elemento con `position: sticky;` se comporta como `relative` hasta que su contenedor alcanza un umbral definido (por ejemplo, `top`, `right`, `bottom`, `left`).
+    - Una vez alcanzado el umbral, el elemento se comporta como `fixed`.
+    - Es útil para crear encabezados o menús que se mantienen visibles mientras se desplaza la página.
+*/
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.overlay {
+    background: linear-gradient(to top, #fff, transparent);
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+}
+
+.contenedor {
+    padding: 150px;
+    background-color: #00f;
+    position: relative;
+}
+
+h2{
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.box{
+    height: 60px;
+    width: 200px;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    border: 1px solid #000;
+    border-right: 0;
+    box-shadow: 0 0 40px #0009;
+    z-index: 30;
+}
+
+.box-fixed{
+    height: 60px;
+    width: 200px;
+    background-color: #f00;
+    position: sticky;
+    top: 100px;
+    z-index: 40;
+    box-sizing: border-box;
+}
+
+.first{
+    top: 30px;
+}
+
+.last {
+    top: 170px;
+}

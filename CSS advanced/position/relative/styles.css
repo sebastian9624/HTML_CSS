@@ -1,0 +1,54 @@
+/* 
+    La propiedad `position` en CSS se utiliza para especificar el método de posicionamiento de un elemento en un documento. 
+    Las dos posiciones más comunes son `absolute` y `relative`.
+
+    1. `position: relative;`
+        - Un elemento con `position: relative` se posiciona en relación a su posición original en el flujo del documento.
+        - Esto significa que el espacio que ocupa el elemento en el flujo del documento no cambia, pero se puede mover desde su posición original utilizando las propiedades `top`, `right`, `bottom` y `left`.
+        - Ejemplo: Si un elemento tiene `top: 10px`, se moverá 10 píxeles hacia abajo desde su posición original.
+
+    2. `position: absolute;`
+        - Un elemento con `position: absolute` se posiciona en relación a su contenedor posicionado más cercano (es decir, un ancestro con `position` distinto de `static`).
+        - Si no hay un contenedor posicionado, se posiciona en relación al contenedor inicial (generalmente el `body` del documento).
+        - Un elemento con `position: absolute` se elimina del flujo normal del documento, lo que significa que no ocupa espacio en el diseño y otros elementos se comportan como si no existiera.
+        - Las propiedades `top`, `right`, `bottom` y `left` se utilizan para especificar la posición exacta del elemento.
+
+    Diferencia principal:
+    - `relative` mantiene el espacio original en el flujo del documento y se mueve desde esa posición.
+    - `absolute` se elimina del flujo del documento y se posiciona en relación a su contenedor posicionado más cercano.
+
+    3. `z-index`
+        - La propiedad `z-index` en CSS controla el orden de apilamiento de los elementos posicionados (aquellos con `position` distinto de `static`).
+        - Un elemento con un `z-index` mayor se apilará por encima de un elemento con un `z-index` menor.
+        - La propiedad `z-index` solo funciona en elementos posicionados (`relative`, `absolute`, `fixed`, o `sticky`).
+        - Ejemplo: Un elemento con `z-index: 10` se mostrará por encima de un elemento con `z-index: 5`.
+
+*/
+
+body{
+    margin: 0;
+    background-color: #ededed;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: #fff;
+    position: relative;
+
+}
+
+.box:first-child{
+    top: 150px;
+    background-color: red;
+    left: 40px;
+    z-index: 30;
+}
+
+.box--blue{
+    background-color: blue;
+    top: 70px;
+    left: 20px;
+    z-index: 20;
+}
