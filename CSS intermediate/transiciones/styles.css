@@ -1,0 +1,41 @@
+/*
+ * La propiedad `overflow` en CSS se utiliza para controlar cómo se maneja el contenido que se desborda del área de un elemento.
+ * Puede tomar los siguientes valores:
+ * 
+ * - `visible`: El contenido desbordado no se recorta y es visible fuera del área del elemento.
+ * - `hidden`: El contenido desbordado se recorta y no es visible.
+ * - `scroll`: El contenido desbordado se recorta, pero se pueden usar barras de desplazamiento para ver el contenido completo.
+ * - `auto`: El contenido desbordado se recorta y se agregan barras de desplazamiento solo si es necesario.
+ * 
+ * Ejemplo:
+ * 
+ * .contenedor {
+ *     width: 200px;
+ *     height: 100px;
+ *     overflow: auto;
+ * }
+ * 
+ * En este ejemplo, si el contenido dentro del elemento con la clase `contenedor` excede los 200px de ancho o los 100px de alto,
+ * se agregarán barras de desplazamiento para permitir al usuario ver todo el contenido.
+ */
+
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #ccc;
+}
+
+.box {
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    color: #f00;
+    position: relative;
+    left: 0;
+    border: 2px solid #0009;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+}

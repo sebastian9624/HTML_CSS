@@ -1,0 +1,36 @@
+/*
+Emmet es una herramienta muy útil para escribir CSS de manera más rápida y eficiente. Aquí tienes algunos de los atajos más útiles que puedes usar en CSS con Emmet:
+
+1. `m10` - margin: 10px;
+2. `p10` - padding: 10px;
+3. `w100` - width: 100px;
+4. `h100` - height: 100px;
+5. `bgc#f00` - background-color: #f00;
+6. `bd1#000` - border: 1px solid #000;
+7. `fs20` - font-size: 20px;
+8. `fw700` - font-weight: 700;
+9. `d` - display: block;
+10. `dib` - display: inline-block;
+11. `df` - display: flex;
+12. `jc` - justify-content: center;
+13. `ai` - align-items: center;
+14. `posr` - position: relative;
+15. `posa` - position: absolute;
+16. `t0` - top: 0;
+17. `l0` - left: 0;
+18. `r0` - right: 0;
+19. `b0` - bottom: 0;
+20. `ovh` - overflow: hidden;
+21. `ovx` - overflow-x: hidden;
+22. `ovy` - overflow-y: hidden;
+23. `cur` - cursor: pointer;
+24. `op0` - opacity: 0;
+25. `op1` - opacity: 1;
+
+Estos son solo algunos ejemplos, pero Emmet ofrece una amplia gama de atajos para facilitar la escritura de CSS.
+*/
+
+header {
+    margin: 10px 10px;
+    color: #777;
+}

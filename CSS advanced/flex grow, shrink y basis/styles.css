@@ -1,0 +1,78 @@
+/*
+ * Las propiedades flex-grow, flex-shrink y flex-basis son parte del modelo de caja flexible (Flexbox) en CSS.
+ * 
+ * 1. flex-grow:
+ *    - Define la capacidad de un elemento para crecer si es necesario.
+ *    - Especifica cuánto del espacio disponible en el contenedor flex debe ocupar el elemento.
+ *    - Valor por defecto: 0 (el elemento no crecerá).
+ *    - Ejemplo: flex-grow: 2; (el elemento crecerá dos veces más que los elementos con flex-grow: 1).
+ * 
+ * 2. flex-shrink:
+ *    - Define la capacidad de un elemento para encogerse si es necesario.
+ *    - Especifica cuánto debe reducirse el tamaño del elemento en relación con los demás elementos flexibles.
+ *    - Valor por defecto: 1 (el elemento puede encogerse).
+ *    - Ejemplo: flex-shrink: 0; (el elemento no se encogerá).
+ * 
+ * 3. flex-basis:
+ *    - Define el tamaño inicial del elemento antes de que se distribuya el espacio restante.
+ *    - Puede ser un valor absoluto (px, em, etc.) o relativo (%, auto).
+ *    - Valor por defecto: auto (el tamaño del elemento se basa en su contenido).
+ *    - Ejemplo: flex-basis: 200px; (el tamaño inicial del elemento será de 200 píxeles).
+ * 
+ * Diferencias:
+ * - flex-grow se usa para controlar cómo los elementos crecen en el espacio disponible.
+ * - flex-shrink se usa para controlar cómo los elementos se encogen cuando hay falta de espacio.
+ * - flex-basis se usa para establecer el tamaño inicial del elemento antes de aplicar flex-grow y flex-shrink.
+ * 
+ * Usos:
+ * - flex-grow es útil para distribuir espacio adicional entre elementos flexibles.
+ * - flex-shrink es útil para manejar la reducción de tamaño de elementos cuando el contenedor es más pequeño.
+ * - flex-basis es útil para establecer un tamaño base antes de aplicar el crecimiento o encogimiento.
+ */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+
+div, body {
+    box-sizing: border-box;
+}
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+
+    margin: 20px;
+    justify-content: start;
+    align-content: center;
+    background-color: #fff;
+    gap: 10px;
+
+}
+
+.flex-item {
+    
+    background-color: #800;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    width: 200px;
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    flex: 1 1 100px;
+    
+}
+
+.flex-item:nth-child(2n) {
+    background-color: #f77;
+    
+    
+    
+}
+.flex-item:last-child {
+    background-color: #000;
+
+    
+
+}

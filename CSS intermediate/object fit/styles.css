@@ -1,0 +1,15 @@
+
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #bbb;
+}
+
+img {
+    width: 400px;
+    height: 1200px;
+    object-fit: scale-down;
+    border: 1px solid #000;
+    margin: 50px 0 0 50px;
+}
