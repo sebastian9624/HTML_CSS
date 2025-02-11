@@ -1,41 +1,40 @@
-/*
- * La propiedad `overflow` en CSS se utiliza para controlar cómo se maneja el contenido que se desborda del área de un elemento.
- * Puede tomar los siguientes valores:
- * 
- * - `visible`: El contenido desbordado no se recorta y es visible fuera del área del elemento.
- * - `hidden`: El contenido desbordado se recorta y no es visible.
- * - `scroll`: El contenido desbordado se recorta, pero se pueden usar barras de desplazamiento para ver el contenido completo.
- * - `auto`: El contenido desbordado se recorta y se agregan barras de desplazamiento solo si es necesario.
- * 
- * Ejemplo:
- * 
- * .contenedor {
- *     width: 200px;
- *     height: 100px;
- *     overflow: auto;
- * }
- * 
- * En este ejemplo, si el contenido dentro del elemento con la clase `contenedor` excede los 200px de ancho o los 100px de alto,
- * se agregarán barras de desplazamiento para permitir al usuario ver todo el contenido.
- */
+/* Este código CSS define una transición para la propiedad 'color' de un elemento.
+   La propiedad 'transition-property' especifica que la transición se aplicará al cambio de color.
+   La propiedad 'transition-duration' establece la duración de la transición en 1 segundo.
+   La propiedad 'color' establece el color inicial del elemento en rojo (#f00).
+
+   Las transiciones en CSS permiten que los cambios en las propiedades CSS ocurran de manera gradual
+   en lugar de instantáneamente. Esto se utiliza para crear efectos visuales más suaves y atractivos
+   cuando los elementos cambian de estado, como al pasar el ratón sobre un elemento o al hacer clic en él.
+
+
+   transition-property: color;
+   transition-duration: 1s;
+   color: #f00;
+*/
 
 
 body{
     margin: 0;
     font-family: sans-serif;
     height: 100vh;
-    background-color: #ccc;
 }
 
 .box {
-    width: 220px;
-    height: 220px;
-    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    background-color: #f00;
+    margin-top: 50px;
+    font-size: 60px;
+    /* transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(.99,-0.02,.14,1); */
+    transition: left 1s cubic-bezier(.99,-0.02,.14,1) 2s;
     color: #f00;
     position: relative;
     left: 0;
-    border: 2px solid #0009;
-    margin: auto;
-    margin-top: 50px;
-    overflow: auto;
+}
+
+body:hover .box {
+    left: 400px;
 }

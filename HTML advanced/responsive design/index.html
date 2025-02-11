@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srcset y Sizes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="dalto-small.png" srcset="dalto-small.png 400w, dalto-medium.png 600w, dalto.png 1000w" 
+    sizes="(max-width: 400px) 300px, 900px, 
+    (max-width: 600px) 500px, 900px"
+    alt="">
+</body>
+</html>
+
+
+<!-- 
+El atributo `srcset` en una etiqueta <img> se utiliza para definir un conjunto de imágenes que el navegador puede elegir, dependiendo de las características de la pantalla del dispositivo (como la resolución de la pantalla). Esto permite servir imágenes de diferentes resoluciones y tamaños, optimizando así el rendimiento y la calidad visual.
+
+El atributo `sizes` se utiliza junto con `srcset` para especificar el tamaño que la imagen debe tener en diferentes condiciones de visualización. Esto ayuda al navegador a seleccionar la imagen más adecuada del conjunto definido en `srcset`, basándose en el tamaño de la ventana de visualización y otros factores.
+
+Ejemplo:
+<img src="imagen-pequena.jpg" 
+    srcset="imagen-grande.jpg 2x, imagen-mediana.jpg 1.5x, imagen-pequena.jpg 1x" 
+    sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+    alt="Descripción de la imagen">
+
+En este ejemplo:
+- `srcset` define tres versiones de la imagen para diferentes resoluciones de pantalla.
+- `sizes` define cómo se debe comportar la imagen en diferentes anchos de ventana.
+-->

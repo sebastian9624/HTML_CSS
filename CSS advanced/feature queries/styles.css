@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+div, body {
+    box-sizing: border-box;
+}
+
+@supports (display: grid) {
+    body {
+        display: grid;
+    }
+}
+@supports not (display: flex) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}

@@ -1,0 +1,108 @@
+/* 
+ * Media Queries son una característica de CSS3 que permiten aplicar estilos CSS 
+ * en función de las características del dispositivo en el que se está visualizando 
+ * la página web, como el ancho de la pantalla, la resolución, la orientación, etc.
+ * 
+ * Ejemplo básico:
+ * 
+ * @media (max-width: 600px) {
+ *   body {
+ *     background-color: lightblue;
+ *   }
+ * }
+ * 
+ * En este ejemplo, el fondo del cuerpo de la página se cambiará a azul claro 
+ * solo si el ancho de la pantalla es de 600 píxeles o menos.
+ * 
+ * Ejemplo con múltiples condiciones:
+ * 
+ * @media (min-width: 600px) and (max-width: 1200px) {
+ *   body {
+ *     background-color: lightgreen;
+ *   }
+ * }
+ * 
+ * Aquí, el fondo del cuerpo será verde claro solo si el ancho de la pantalla 
+ * está entre 600 y 1200 píxeles.
+ * 
+ * Ejemplo con orientación:
+ * 
+ * @media (orientation: landscape) {
+ *   body {
+ *     background-color: lightcoral;
+ *   }
+ * }
+ * 
+ * En este caso, el fondo del cuerpo será coral claro solo si el dispositivo 
+ * está en modo apaisado.
+ * 
+ * Ejemplo con resolución:
+ * 
+ * @media (min-resolution: 2dppx) {
+ *   body {
+ *     background-color: lightgoldenrodyellow;
+ *   }
+ * }
+ * 
+ * Aquí, el fondo del cuerpo será amarillo dorado claro solo si la resolución 
+ * del dispositivo es de al menos 2 píxeles por punto.
+ * 
+ * Ejemplo con tipos de medios:
+ * 
+ * @media screen and (max-width: 600px) {
+ *   body {
+ *     background-color: lightpink;
+ *   }
+ * }
+ * 
+ * En este ejemplo, el fondo del cuerpo será rosa claro solo si el medio es 
+ * una pantalla y el ancho es de 600 píxeles o menos.
+ * 
+ * Media Queries también pueden combinarse con otras reglas CSS para crear 
+ * diseños responsivos que se adapten a diferentes tamaños de pantalla y 
+ * dispositivos, mejorando así la experiencia del usuario.
+ */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+
+}
+
+
+div, body {
+    box-sizing: border-box;
+}
+
+/* @media print { PARA IMPRESIÓN
+    body { AQUÍ MODIFICAMOS EL ESTILO DE LA PÁGINA PARA IMPRIMIR, EN ESTE CASO BODY
+        font-size: 24pt; PT ES UNA UNIDAD DE MEDIDA PARA IMPRESIÓN
+    }
+} */
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    background-color: #ccc;
+    padding: 30px;
+    border: 1px solid #f00;
+    flex-grow: 1;
+
+}
+
+@media screen and (max-width: 480px) {
+/*     body {
+        font-size: 20px;
+        background-color: #000;
+        color: #fff;
+        transition: background-color 0.5s;
+    } */
+    .flexbox {
+        flex-direction: column;
+    }
+
+    
+}
