@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: Montserrat;
+    background-color: #ccc;
+    height: 200vh;
+    scroll-timeline: --body block;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+.crecedor {
+    height: 100vh;
+}
+
+.box{
+    view-timeline: --cajita block;
+    background-color: #48e;
+    padding: 20px;
+    animation: llenar-barra;
+    animation-fill-mode: both;
+    animation-timeline: --cajita ;
+    animation-timing-function: linear;
+    animation-range: cover 20%;
+}
+
+
+
+
+
+@keyframes llenar-barra {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+        background-color: #f33;
+    }
+}
